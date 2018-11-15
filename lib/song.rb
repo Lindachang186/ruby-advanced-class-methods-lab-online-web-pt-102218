@@ -58,6 +58,7 @@ class Song
   end
 
   def self.create_from_filename
+    binding.pry
     new = file_name.split(%r{\s?[-.]\s?})
 
   end
