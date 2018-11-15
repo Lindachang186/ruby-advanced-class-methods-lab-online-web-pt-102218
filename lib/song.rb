@@ -57,6 +57,11 @@ class Song
     song
   end
 
+  def self.create_from_filename
+    new = file_name.split(%r{\s?[-.]\s?})
+
+  end
+
 
   def self.destroy_all
     self.all.clear
