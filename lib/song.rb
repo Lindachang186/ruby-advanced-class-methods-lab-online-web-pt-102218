@@ -60,7 +60,11 @@ class Song
   def self.create_from_filename(file_name)
     binding.pry
     new = file_name.split(%r{\s?[-.]\s?})
-
+    if new[2] == "mp3"
+      song = self.create_by_name(new[1])
+      song.artist_name = new[0]
+      song
+    end
   end
 
 
