@@ -63,6 +63,7 @@ class Song
       song = self.create_by_name(new[1])
       song.artist_name = new[0]
       song
+      binding.pry
     end
   end
 
